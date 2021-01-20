@@ -1,0 +1,16 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+body {
+    background: azure;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span2 {
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    text-shadow: 1px 1px #ff1f8f, 2px 2px #000000;
+}

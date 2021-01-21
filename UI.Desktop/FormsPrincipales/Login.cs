@@ -90,12 +90,13 @@ namespace UI.Desktop
             }
         }
 
-
-        #endregion
-
         private void lnkOlvidoPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             MessageBox.Show("Es Ud. un usuario muy descuidado, haga memoria", "Olvidé mi contraseña", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        #endregion
+
+
     }
 }

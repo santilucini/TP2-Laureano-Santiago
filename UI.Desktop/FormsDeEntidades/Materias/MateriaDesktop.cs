@@ -315,6 +315,8 @@ namespace UI.Desktop
 
         #endregion
 
+        #region Eventos
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             limpioErrores();
@@ -365,5 +367,7 @@ namespace UI.Desktop
                     break;
             }
         }
+
+        #endregion
     }
 }

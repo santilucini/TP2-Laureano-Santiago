@@ -14,6 +14,7 @@ namespace UI.Desktop.FormsPorTipo.Alumno
     public partial class FormAlumno : Form
     {
         private Usuario _UsuarioActual;
+
         #region Propiedades
         public Usuario UsuarioActual
         {
@@ -21,6 +22,7 @@ namespace UI.Desktop.FormsPorTipo.Alumno
             set { _UsuarioActual = value; }
         }
         #endregion
+
         #region Constructor
         public FormAlumno(Usuario userActual)
         {

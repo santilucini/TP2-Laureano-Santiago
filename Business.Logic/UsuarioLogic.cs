@@ -9,7 +9,7 @@ using Business.Entities;
 namespace Business.Logic
 {
     public class UsuarioLogic : BusinessLogic
-    {
+    {     
 
         public UsuarioLogic()
         {

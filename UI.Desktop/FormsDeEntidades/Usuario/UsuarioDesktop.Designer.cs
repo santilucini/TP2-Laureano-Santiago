@@ -123,10 +123,10 @@
             this.chkHabilitado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkHabilitado.AutoSize = true;
             this.chkHabilitado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHabilitado.Location = new System.Drawing.Point(248, 3);
+            this.chkHabilitado.Location = new System.Drawing.Point(249, 3);
             this.chkHabilitado.Name = "chkHabilitado";
-            this.chkHabilitado.Size = new System.Drawing.Size(100, 20);
-            this.chkHabilitado.TabIndex = 1;
+            this.chkHabilitado.Size = new System.Drawing.Size(99, 20);
+            this.chkHabilitado.TabIndex = 2;
             this.chkHabilitado.Text = "Habilitado";
             this.chkHabilitado.UseVisualStyleBackColor = true;
             // 
@@ -191,7 +191,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(366, 164);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(150, 21);
-            this.txtUsuario.TabIndex = 21;
+            this.txtUsuario.TabIndex = 12;
             // 
             // txtConfirmarClave
             // 
@@ -199,7 +199,7 @@
             this.txtConfirmarClave.Location = new System.Drawing.Point(366, 191);
             this.txtConfirmarClave.Name = "txtConfirmarClave";
             this.txtConfirmarClave.Size = new System.Drawing.Size(150, 21);
-            this.txtConfirmarClave.TabIndex = 23;
+            this.txtConfirmarClave.TabIndex = 14;
             // 
             // txtClave
             // 
@@ -207,7 +207,7 @@
             this.txtClave.Location = new System.Drawing.Point(81, 191);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(150, 21);
-            this.txtClave.TabIndex = 24;
+            this.txtClave.TabIndex = 13;
             // 
             // txtID
             // 
@@ -215,7 +215,7 @@
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(150, 20);
-            this.txtID.TabIndex = 71;
+            this.txtID.TabIndex = 1;
             // 
             // txtEmail
             // 
@@ -223,7 +223,7 @@
             this.txtEmail.Location = new System.Drawing.Point(81, 164);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(150, 21);
-            this.txtEmail.TabIndex = 22;
+            this.txtEmail.TabIndex = 11;
             // 
             // lbNombre
             // 
@@ -242,7 +242,7 @@
             this.txtNombre.Location = new System.Drawing.Point(81, 29);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(150, 21);
-            this.txtNombre.TabIndex = 19;
+            this.txtNombre.TabIndex = 3;
             // 
             // lbApellido
             // 
@@ -261,7 +261,7 @@
             this.txtApellido.Location = new System.Drawing.Point(366, 29);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(150, 21);
-            this.txtApellido.TabIndex = 20;
+            this.txtApellido.TabIndex = 4;
             // 
             // lbPlan
             // 
@@ -281,7 +281,7 @@
             this.cbPlanes.Location = new System.Drawing.Point(81, 56);
             this.cbPlanes.Name = "cbPlanes";
             this.cbPlanes.Size = new System.Drawing.Size(109, 21);
-            this.cbPlanes.TabIndex = 56;
+            this.cbPlanes.TabIndex = 5;
             // 
             // lbFecNac
             // 
@@ -301,7 +301,7 @@
             this.dtpFechaNac.Location = new System.Drawing.Point(366, 56);
             this.dtpFechaNac.Name = "dtpFechaNac";
             this.dtpFechaNac.Size = new System.Drawing.Size(150, 20);
-            this.dtpFechaNac.TabIndex = 73;
+            this.dtpFechaNac.TabIndex = 6;
             // 
             // lbTipoPersona
             // 
@@ -321,7 +321,7 @@
             this.cbTiposPersonas.Location = new System.Drawing.Point(81, 97);
             this.cbTiposPersonas.Name = "cbTiposPersonas";
             this.cbTiposPersonas.Size = new System.Drawing.Size(109, 21);
-            this.cbTiposPersonas.TabIndex = 75;
+            this.cbTiposPersonas.TabIndex = 7;
             // 
             // lbDireccion
             // 
@@ -339,7 +339,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(366, 97);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(109, 20);
-            this.txtDireccion.TabIndex = 77;
+            this.txtDireccion.TabIndex = 8;
             // 
             // lbTelefono
             // 
@@ -357,7 +357,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(81, 135);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(150, 20);
-            this.txtTelefono.TabIndex = 79;
+            this.txtTelefono.TabIndex = 9;
             // 
             // lbLegajo
             // 
@@ -375,7 +375,7 @@
             this.txtLegajo.Location = new System.Drawing.Point(366, 135);
             this.txtLegajo.Name = "txtLegajo";
             this.txtLegajo.Size = new System.Drawing.Size(109, 20);
-            this.txtLegajo.TabIndex = 81;
+            this.txtLegajo.TabIndex = 10;
             // 
             // btnAceptar
             // 
@@ -383,7 +383,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(261, 246);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 25;
+            this.btnAceptar.TabIndex = 15;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -394,7 +394,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(409, 246);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 26;
+            this.btnCancelar.TabIndex = 16;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);

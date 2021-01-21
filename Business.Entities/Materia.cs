@@ -43,6 +43,7 @@ namespace Business.Entities
             get { return _HSTotales; }
             set { _HSTotales = value; }
         }
+
         // Plan
 
         public Plan Plan

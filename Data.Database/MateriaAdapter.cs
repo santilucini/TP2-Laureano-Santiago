@@ -157,7 +157,7 @@ namespace Data.Database
                 //CAPAS QUE HAY ERROR ACA NO ESTA REVISADO
                 SqlCommand cmdSave = new SqlCommand(
                     "UPDATE materias SET desc_materia = @desc_materia, hs_semanales = @hssemanales, hs_totales = @hstotales, id_plan = @idplan" +
-                    "WHERE id_materia = @id" + sqlConn);
+                    " WHERE id_materia = @id", sqlConn);
 
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = materia.ID;
                 cmdSave.Parameters.Add("@desc_materia", SqlDbType.VarChar, 50).Value = materia.Descripcion;

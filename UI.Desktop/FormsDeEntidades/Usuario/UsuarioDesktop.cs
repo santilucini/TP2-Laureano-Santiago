@@ -414,7 +414,7 @@ namespace UI.Desktop
             }
         }
 
-        #endregion
+
         /*
         bool IsValidEmail(string email)
         {
@@ -443,6 +443,7 @@ namespace UI.Desktop
             this.Notificar(this.Text, mensaje, botones, icono);
         }
         */
+        #endregion
         #endregion
 
         #region Eventos

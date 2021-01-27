@@ -125,7 +125,7 @@ namespace Data.Database
             catch (Exception Ex)
             {
                 Exception ExcepcionManejada =
-                    new Exception("Error al eliminar especialidad", Ex);
+                    new Exception("Error al eliminar especialidad. Esta especialidad esta asignada a un plan", Ex);
                 throw ExcepcionManejada;
             }
             finally

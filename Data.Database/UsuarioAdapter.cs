@@ -310,9 +310,12 @@ namespace Data.Database
                     sqlConn);
                     */
 
-                SqlCommand cmdSave = new SqlCommand("insert into usuarios(nombre_usuario, clave, habilitado, id_persona) " +
-               "values(@nombre_usuario, @clave, @habilitado, @idPersona); ", sqlConn);
+                SqlCommand cmdSave = new SqlCommand("insert into usuarios(nombre,apellido,email,nombre_usuario, clave, habilitado, id_persona) " +
+               "values(@nombre,@apellido,@email,@nombre_usuario, @clave, @habilitado, @idPersona); ", sqlConn);
 
+                cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Persona.Nombre;
+                cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Persona.Apellido;
+                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Persona.Email;
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;

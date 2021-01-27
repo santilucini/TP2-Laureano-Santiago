@@ -22,7 +22,7 @@ namespace UI.Desktop.FormsPorTipo.Docente
         private void ReportePlanes_Load(object sender, EventArgs e)
         {
 
-            RvPlanes.LocalReport.ReportPath = @"D:\Facultad\3ero\.Net Tecnologias de Desarrollo de Software IDE\TP2\TP2-V10\TP2-master\UI.Desktop\FormsPorTipo\Docente\ReportePlanes.rdlc";
+            RvPlanes.LocalReport.ReportPath = @"C:\Users\Laureano\Desktop\TP2-Laureano-Santiago\UI.Desktop\FormsPorTipo\Docente\ReportePlanes.rdlc";//@"D:\Facultad\3ero\.Net Tecnologias de Desarrollo de Software IDE\TP2\TP2-V10\TP2-master\UI.Desktop\FormsPorTipo\Docente\ReportePlanes.rdlc";
             RvPlanes.ProcessingMode = ProcessingMode.Local;
 
             PlanesBindingSource.DataSource = new PlanLogic().GetAll();

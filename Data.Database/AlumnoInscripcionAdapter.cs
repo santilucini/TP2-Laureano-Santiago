@@ -320,6 +320,49 @@ namespace Data.Database
             return ins;
         }
 
+        public List<AlumnoInscripcion> GetAllByCurso(int ID)
+        {
+            List<AlumnoInscripcion> Inscripciones = new List<AlumnoInscripcion>();
+            try
+            {
+                OpenConnection();
+                SqlCommand cmdInscripcionesCurso = new SqlCommand("select * from alumnos_inscripciones where id_curso = @idcurso", sqlConn);
+                cmdInscripcionesCurso.Parameters.Add("@idcurso", SqlDbType.Int).Value = ID;
+                SqlDataReader drIncripciones = cmdInscripcionesCurso.ExecuteReader();
+
+                while (drIncripciones.Read())
+                {
+                    AlumnoInscripcion ins = new AlumnoInscripcion();
+                    ins.Alumno = new PersonasAdapter().GetOne((int)drIncripciones["id_alumno"]);
+                    ins.ID = (int)drIncripciones["id_inscripcion"];
+
+                    ins.Curso = new CursoAdapter().GetOne((int)drIncripciones["id_curso"]);
+                    ins.Condicion = (string)drIncripciones["condicion"];
+                    // validar que la notas no sean null
+                    if (String.IsNullOrEmpty(drIncripciones["nota"].ToString()))
+                    {
+                        ins.Nota = 0;
+                    }
+                    else
+                    {
+                        ins.Nota = (int)drIncripciones["nota"];
+                    }
+                    Inscripciones.Add(ins);
+                }
+                drIncripciones.Close();
+            }
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada = new Exception("Error al recuperar la lista de Inscripciones", Ex);
+                throw ExcepcionManejada;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+            return Inscripciones;
+        }
+
         public bool GetOne(AlumnoInscripcion inscrip)
         {
             AlumnoInscripcion ins = new AlumnoInscripcion();

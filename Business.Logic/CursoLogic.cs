@@ -30,9 +30,20 @@ namespace Business.Logic
             return CursoData.GetOne(ID);
         }
 
-        public void Delete(int ID)
+        public bool Delete(int ID)
         {
-            CursoData.Delete(ID);
+            AlumnoInscripcionLogic alumnoInscripcionLogic = new AlumnoInscripcionLogic();
+            DocenteCursoLogic docenteCursoLogic = new DocenteCursoLogic(); 
+            if ((alumnoInscripcionLogic.GetAllByCurso(ID).Count() == 0)&&(docenteCursoLogic.GetAllByCurso(ID).Count == 0))
+            {
+                CursoData.Delete(ID);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
         public void Save(Business.Entities.Curso curso)

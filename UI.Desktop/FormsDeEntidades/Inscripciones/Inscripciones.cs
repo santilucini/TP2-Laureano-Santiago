@@ -46,6 +46,8 @@ namespace UI.Desktop
 
         private void Inscripciones_Load(object sender, EventArgs e)
         {
+            Listar();
+            /*
             try
             {
                 UsuarioLogic usuarioLogic = new UsuarioLogic();
@@ -74,7 +76,7 @@ namespace UI.Desktop
                     new Exception("Erro al recuperar Modulo", ex);
 
                 throw ExcepcionManejada;
-            }
+            }*/
         }
 
         private void tsbNuevo_Click(object sender, EventArgs e)

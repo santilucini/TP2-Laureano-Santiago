@@ -107,7 +107,7 @@ namespace Data.Database
                     docenteCurso.Docente = new PersonasAdapter().GetOne((int)drDocenteCursos["id_docente"]);
                     docenteCurso.Curso = new CursoAdapter().GetOne((int)drDocenteCursos["id_curso"]);
                     docenteCurso.ID = (int)drDocenteCursos["id_dictado"];
-                    doc.Cargo = (DocenteCurso.TiposCargos)(int)drDocenteCursos["cargo"];
+                    docenteCurso.Cargo = (DocenteCurso.TiposCargos)(int)drDocenteCursos["cargo"];
                     DocentesCurso.Add(docenteCurso);
                 }
                 drDocenteCursos.Close();

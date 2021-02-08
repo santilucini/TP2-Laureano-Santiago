@@ -175,7 +175,7 @@ namespace Data.Database
                 {
                     doc.ID = (int)drDocenteCursos["id_dictado"];
                     doc.Curso = new CursoAdapter().GetOne((int)drDocenteCursos["id_curso"]);
-                    doc.Docente = new PersonasAdapter().GetOne((int)drDocenteCursos["id_persona"]);
+                    doc.Docente = new PersonasAdapter().GetOne((int)drDocenteCursos["id_docente"]);
                     /* CORREGIDO ARRIBA
                     doc.IDCurso = (int)drDocenteCursos["id_curso"];
                     doc.IDDocente = (int)drDocenteCursos["id_docente"];

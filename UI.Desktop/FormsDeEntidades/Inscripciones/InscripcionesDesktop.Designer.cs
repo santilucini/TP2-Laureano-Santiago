@@ -32,15 +32,15 @@
             this.lblId = new System.Windows.Forms.Label();
             this.lblIdAlumno = new System.Windows.Forms.Label();
             this.lblCurso = new System.Windows.Forms.Label();
-            this.lblCondicion = new System.Windows.Forms.Label();
             this.lblNota = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.cbxIDAlumno = new System.Windows.Forms.ComboBox();
             this.cbxIdCurso = new System.Windows.Forms.ComboBox();
-            this.txtCondicion = new System.Windows.Forms.TextBox();
             this.txtNota = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtCondicion = new System.Windows.Forms.TextBox();
+            this.lblCondicion = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,15 +101,6 @@
             this.lblCurso.TabIndex = 2;
             this.lblCurso.Text = "Curso";
             // 
-            // lblCondicion
-            // 
-            this.lblCondicion.AutoSize = true;
-            this.lblCondicion.Location = new System.Drawing.Point(178, 26);
-            this.lblCondicion.Name = "lblCondicion";
-            this.lblCondicion.Size = new System.Drawing.Size(54, 13);
-            this.lblCondicion.TabIndex = 3;
-            this.lblCondicion.Text = "Condicion";
-            // 
             // lblNota
             // 
             this.lblNota.AutoSize = true;
@@ -143,13 +134,6 @@
             this.cbxIdCurso.Size = new System.Drawing.Size(121, 21);
             this.cbxIdCurso.TabIndex = 7;
             // 
-            // txtCondicion
-            // 
-            this.txtCondicion.Location = new System.Drawing.Point(259, 29);
-            this.txtCondicion.Name = "txtCondicion";
-            this.txtCondicion.Size = new System.Drawing.Size(100, 20);
-            this.txtCondicion.TabIndex = 8;
-            // 
             // txtNota
             // 
             this.txtNota.Location = new System.Drawing.Point(259, 56);
@@ -177,6 +161,23 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // txtCondicion
+            // 
+            this.txtCondicion.Location = new System.Drawing.Point(259, 29);
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.ReadOnly = true;
+            this.txtCondicion.Size = new System.Drawing.Size(100, 20);
+            this.txtCondicion.TabIndex = 8;
+            // 
+            // lblCondicion
+            // 
+            this.lblCondicion.AutoSize = true;
+            this.lblCondicion.Location = new System.Drawing.Point(178, 26);
+            this.lblCondicion.Name = "lblCondicion";
+            this.lblCondicion.Size = new System.Drawing.Size(54, 13);
+            this.lblCondicion.TabIndex = 3;
+            this.lblCondicion.Text = "Condicion";
+            // 
             // InscripcionesDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,14 +199,14 @@
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblIdAlumno;
         private System.Windows.Forms.Label lblCurso;
-        private System.Windows.Forms.Label lblCondicion;
         private System.Windows.Forms.Label lblNota;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.ComboBox cbxIDAlumno;
         private System.Windows.Forms.ComboBox cbxIdCurso;
-        private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.TextBox txtNota;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblCondicion;
+        private System.Windows.Forms.TextBox txtCondicion;
     }
 }

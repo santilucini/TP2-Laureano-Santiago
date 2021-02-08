@@ -58,6 +58,7 @@ namespace Business.Entities
         public string DescComision
         {
             get { return Comision.Descripcion; }
+         
             
         }
 
@@ -77,6 +78,7 @@ namespace Business.Entities
         public string DescMateria
         {
             get { return Materia.Descripcion; }
+            set { Materia.Descripcion = value; }
             
         }
 

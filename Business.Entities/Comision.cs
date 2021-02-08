@@ -57,6 +57,7 @@ namespace Business.Entities
         {
             get { return Plan.Descripcion; }
            
+           
         }
         #endregion
 

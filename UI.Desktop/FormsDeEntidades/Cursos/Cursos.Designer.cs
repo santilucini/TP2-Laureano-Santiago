@@ -34,13 +34,13 @@
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.dgvCursos = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idmateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcomision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aniocalendario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.tsCursos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
             this.SuspendLayout();
@@ -105,41 +105,6 @@
             this.dgvCursos.Size = new System.Drawing.Size(563, 238);
             this.dgvCursos.TabIndex = 1;
             // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // idmateria
-            // 
-            this.idmateria.DataPropertyName = "idmateria";
-            this.idmateria.HeaderText = "ID Materia";
-            this.idmateria.Name = "idmateria";
-            this.idmateria.ReadOnly = true;
-            // 
-            // idcomision
-            // 
-            this.idcomision.DataPropertyName = "idcomision";
-            this.idcomision.HeaderText = "ID Comision";
-            this.idcomision.Name = "idcomision";
-            this.idcomision.ReadOnly = true;
-            // 
-            // aniocalendario
-            // 
-            this.aniocalendario.DataPropertyName = "aniocalendario";
-            this.aniocalendario.HeaderText = "Año Calendario";
-            this.aniocalendario.Name = "aniocalendario";
-            this.aniocalendario.ReadOnly = true;
-            // 
-            // cupo
-            // 
-            this.cupo.DataPropertyName = "cupo";
-            this.cupo.HeaderText = "Cupo";
-            this.cupo.Name = "cupo";
-            this.cupo.ReadOnly = true;
-            // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(500, 273);
@@ -159,6 +124,41 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // idmateria
+            // 
+            this.idmateria.DataPropertyName = "DescMateria";
+            this.idmateria.HeaderText = "Materia";
+            this.idmateria.Name = "idmateria";
+            this.idmateria.ReadOnly = true;
+            // 
+            // idcomision
+            // 
+            this.idcomision.DataPropertyName = "DescComision";
+            this.idcomision.HeaderText = "Comision";
+            this.idcomision.Name = "idcomision";
+            this.idcomision.ReadOnly = true;
+            // 
+            // aniocalendario
+            // 
+            this.aniocalendario.DataPropertyName = "aniocalendario";
+            this.aniocalendario.HeaderText = "Año Calendario";
+            this.aniocalendario.Name = "aniocalendario";
+            this.aniocalendario.ReadOnly = true;
+            // 
+            // cupo
+            // 
+            this.cupo.DataPropertyName = "cupo";
+            this.cupo.HeaderText = "Cupo";
+            this.cupo.Name = "cupo";
+            this.cupo.ReadOnly = true;
             // 
             // Cursos
             // 

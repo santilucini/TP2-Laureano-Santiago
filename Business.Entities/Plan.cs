@@ -44,6 +44,7 @@ namespace Business.Entities
         public string DescEspecialidad
         {
             get { return Especialidad.Descripcion; }
+            set { Especialidad.Descripcion = value; }
         }
 
         #endregion

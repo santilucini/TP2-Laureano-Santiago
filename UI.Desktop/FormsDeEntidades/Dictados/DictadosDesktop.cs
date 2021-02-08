@@ -51,8 +51,11 @@ namespace UI.Desktop
 
         #region Metodos
 
+        
+
         public override void MapearDeDatos()
         {
+            
             txtID.Text = DictadoActual.ID.ToString();
             cbxIdCurso.Text = DictadoActual.IDCurso.ToString();
             cbxIdDocente.Text = DictadoActual.IDDocente.ToString();

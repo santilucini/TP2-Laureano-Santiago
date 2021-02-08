@@ -49,11 +49,12 @@ namespace Business.Entities
             set { Alumno.ID = value; }
             
         }
-
+      
         public string NombreAlumno
         {
-            get { return Alumno.Nombre; }
+            get { return Alumno.Apellido + ", " + Alumno.Nombre; }
             
+
         }
 
         public string ApellidoAlumno
@@ -79,6 +80,7 @@ namespace Business.Entities
         public string DescMateria
         {
             get { return Curso.DescMateria; }
+            set { Curso.DescMateria = value; }
         }
 
         public string DescComision

@@ -48,6 +48,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbNuevo,
             this.tsbEditar,
@@ -154,15 +155,15 @@
             // 
             // iddocente
             // 
-            this.iddocente.DataPropertyName = "iddocente";
-            this.iddocente.HeaderText = "ID Docente";
+            this.iddocente.DataPropertyName = "NombreApellDocente";
+            this.iddocente.HeaderText = "Docente";
             this.iddocente.Name = "iddocente";
             this.iddocente.ReadOnly = true;
             // 
             // idcurso
             // 
-            this.idcurso.DataPropertyName = "idcurso";
-            this.idcurso.HeaderText = "ID Curso";
+            this.idcurso.DataPropertyName = "DescMateriaCurso";
+            this.idcurso.HeaderText = "Curso";
             this.idcurso.Name = "idcurso";
             this.idcurso.ReadOnly = true;
             // 

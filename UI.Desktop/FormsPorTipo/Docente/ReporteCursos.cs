@@ -21,7 +21,7 @@ namespace UI.Desktop.FormsPorTipo.Docente
 
         private void ReporteCursos_Load(object sender, EventArgs e)
         {
-            rvCursos.LocalReport.ReportPath = @"C:\Users\Laureano\Desktop\TP2-Laureano-Santiago\UI.Desktop\FormsPorTipo\Docente\ReporteCursos.rdlc";//@"D:\Facultad\3ero\.Net Tecnologias de Desarrollo de Software IDE\TP2\TP2-V10\TP2-master\UI.Desktop\FormsPorTipo\Docente\ReporteCursos.rdlc";
+            rvCursos.LocalReport.ReportPath = @"C:\Users\Laureano\source\repos\TP2-Laureano-Santiago\UI.Desktop\FormsPorTipo\Docente\ReporteCursos.rdlc";//@"D:\Facultad\3ero\.Net Tecnologias de Desarrollo de Software IDE\TP2\TP2-V10\TP2-master\UI.Desktop\FormsPorTipo\Docente\ReporteCursos.rdlc";
             rvCursos.ProcessingMode = ProcessingMode.Local;
 
             CursosBindingSource.DataSource = new CursoLogic().GetAll();

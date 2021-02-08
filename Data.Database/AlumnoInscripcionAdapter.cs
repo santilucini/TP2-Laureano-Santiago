@@ -38,6 +38,7 @@ namespace Data.Database
                     ins.IDCurso = (int)drInscripcion["id_curso"];
                     */
                     ins.Condicion = (string)drInscripcion["condicion"];
+                    
 
                     // Validar que la nota no sea null
                     if (String.IsNullOrEmpty(drInscripcion["nota"].ToString()))

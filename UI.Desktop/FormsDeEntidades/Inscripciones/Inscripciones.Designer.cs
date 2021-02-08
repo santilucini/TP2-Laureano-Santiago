@@ -35,13 +35,13 @@
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tlpInscripciones = new System.Windows.Forms.TableLayoutPanel();
             this.dgvInscripciones = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idalumno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.condicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nota = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.tlpInscripciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInscripciones)).BeginInit();
@@ -49,6 +49,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbNuevo,
             this.tsbEditar,
@@ -125,41 +126,6 @@
             this.dgvInscripciones.Size = new System.Drawing.Size(679, 236);
             this.dgvInscripciones.TabIndex = 0;
             // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // idalumno
-            // 
-            this.idalumno.DataPropertyName = "idalumno";
-            this.idalumno.HeaderText = "ID Alumno";
-            this.idalumno.Name = "idalumno";
-            this.idalumno.ReadOnly = true;
-            // 
-            // idcurso
-            // 
-            this.idcurso.DataPropertyName = "idcurso";
-            this.idcurso.HeaderText = "ID Curso";
-            this.idcurso.Name = "idcurso";
-            this.idcurso.ReadOnly = true;
-            // 
-            // condicion
-            // 
-            this.condicion.DataPropertyName = "condicion";
-            this.condicion.HeaderText = "Condicion";
-            this.condicion.Name = "condicion";
-            this.condicion.ReadOnly = true;
-            // 
-            // nota
-            // 
-            this.nota.DataPropertyName = "nota";
-            this.nota.HeaderText = "Nota";
-            this.nota.Name = "nota";
-            this.nota.ReadOnly = true;
-            // 
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -181,6 +147,41 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // idalumno
+            // 
+            this.idalumno.DataPropertyName = "NombreAlumno";
+            this.idalumno.HeaderText = "Alumno";
+            this.idalumno.Name = "idalumno";
+            this.idalumno.ReadOnly = true;
+            // 
+            // idcurso
+            // 
+            this.idcurso.DataPropertyName = "DescMateria";
+            this.idcurso.HeaderText = "Curso";
+            this.idcurso.Name = "idcurso";
+            this.idcurso.ReadOnly = true;
+            // 
+            // condicion
+            // 
+            this.condicion.DataPropertyName = "condicion";
+            this.condicion.HeaderText = "Condicion";
+            this.condicion.Name = "condicion";
+            this.condicion.ReadOnly = true;
+            // 
+            // nota
+            // 
+            this.nota.DataPropertyName = "nota";
+            this.nota.HeaderText = "Nota";
+            this.nota.Name = "nota";
+            this.nota.ReadOnly = true;
             // 
             // Inscripciones
             // 
@@ -209,12 +210,12 @@
         private System.Windows.Forms.ToolStripButton tsbEliminar;
         private System.Windows.Forms.TableLayoutPanel tlpInscripciones;
         private System.Windows.Forms.DataGridView dgvInscripciones;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn idalumno;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcurso;
         private System.Windows.Forms.DataGridViewTextBoxColumn condicion;
         private System.Windows.Forms.DataGridViewTextBoxColumn nota;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnActualizar;
     }
 }

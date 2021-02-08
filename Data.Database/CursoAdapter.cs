@@ -33,7 +33,7 @@ namespace Data.Database
 
                     cur.Comision = new ComisionAdapter().GetOne((int)drCursos["id_comision"]);
                     cur.Materia = new MateriaAdapter().GetOne((int)drCursos["id_materia"]);
-
+                   
                     /* MAL HECHO CORREGIDO  ARRIBA
                     cur.IDMateria = (int)drCursos["id_materia"];
                     cur.IDComision = (int)drCursos["id_comision"];

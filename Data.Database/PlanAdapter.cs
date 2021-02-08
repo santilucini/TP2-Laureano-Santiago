@@ -28,8 +28,6 @@ namespace Data.Database
                     pln.ID = (int)drPlanes["id_plan"];
                     pln.Descripcion = (string)drPlanes["desc_plan"];
                     pln.Especialidad = new EspecialidadAdapter().GetOne((int)drPlanes["id_especialidad"]);
-
-                    //pln.IDEspecialidad = (int)drPlanes["id_especialidad"];
                     planes.Add(pln);
                 }
                 drPlanes.Close();

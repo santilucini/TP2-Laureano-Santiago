@@ -31,7 +31,7 @@ namespace Data.Database
                     com.Descripcion = (string)drComisiones["desc_comision"];
                     com.AnioEspecialidad = (int)drComisiones["anio_especialidad"];
                     com.Plan = new PlanAdapter().GetOne((int)drComisiones["id_plan"]);
-
+                    
                     //Correjido
                     //com.IDPlan = (int)drComisiones["id_plan"];
 

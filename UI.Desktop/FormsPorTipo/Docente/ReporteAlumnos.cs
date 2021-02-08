@@ -24,7 +24,7 @@ namespace UI.Desktop.FormsPorTipo.Docente
 
         private void ReporteAlumnoForm_Load(object sender, EventArgs e)
         {
-            RvInscripciones.LocalReport.ReportPath = @"C:\Users\Santi\source\repos\TP2-Laureano-Santiago\UI.Desktop\FormsPorTipo\Docente\ReporteAlumnos.rdlc";//@"C:\Users\Laureano\Desktop\TP2-Laureano-Santiago\UI.Desktop\FormsPorTipo\Docente\ReporteAlumnos.rdlc";@"D:\Facultad\3ero\.Net Tecnologias de Desarrollo de Software IDE\TP2\TP2-V10\TP2-master\UI.Desktop\FormsPorTipo\Docente\ReporteAlumnos.rdlc";
+            RvInscripciones.LocalReport.ReportPath = @"C:\Users\Laureano\source\repos\TP2-Laureano-Santiago\UI.Desktop\FormsPorTipo\Docente\ReporteAlumnos.rdlc";
             RvInscripciones.ProcessingMode = ProcessingMode.Local;
 
             InscripcionBindingSource.DataSource = new AlumnoInscripcionLogic().GetAll();

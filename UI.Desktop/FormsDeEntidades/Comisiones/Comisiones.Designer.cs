@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comisiones));
             this.tcComisiones = new System.Windows.Forms.ToolStripContainer();
             this.tlpComisiones = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvComisiones = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.tsUsuarios = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
-            this.idEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anioEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvComisiones = new System.Windows.Forms.DataGridView();
+            this.desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anioEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcComisiones.ContentPanel.SuspendLayout();
             this.tcComisiones.TopToolStripPanel.SuspendLayout();
             this.tcComisiones.SuspendLayout();
             this.tlpComisiones.SuspendLayout();
-            this.tsUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).BeginInit();
+            this.tsUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcComisiones
@@ -86,6 +86,26 @@
             this.tlpComisiones.Size = new System.Drawing.Size(800, 418);
             this.tlpComisiones.TabIndex = 0;
             // 
+            // dgvComisiones
+            // 
+            this.dgvComisiones.AllowUserToAddRows = false;
+            this.dgvComisiones.AllowUserToDeleteRows = false;
+            this.dgvComisiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvComisiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.desc,
+            this.anioEspecialidad,
+            this.idEspecialidad});
+            this.tlpComisiones.SetColumnSpan(this.dgvComisiones, 2);
+            this.dgvComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvComisiones.Location = new System.Drawing.Point(3, 3);
+            this.dgvComisiones.MultiSelect = false;
+            this.dgvComisiones.Name = "dgvComisiones";
+            this.dgvComisiones.ReadOnly = true;
+            this.dgvComisiones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvComisiones.Size = new System.Drawing.Size(794, 383);
+            this.dgvComisiones.TabIndex = 0;
+            // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(722, 392);
@@ -118,7 +138,7 @@
             this.tsbEliminar});
             this.tsUsuarios.Location = new System.Drawing.Point(6, 0);
             this.tsUsuarios.Name = "tsUsuarios";
-            this.tsUsuarios.Size = new System.Drawing.Size(130, 32);
+            this.tsUsuarios.Size = new System.Drawing.Size(99, 32);
             this.tsUsuarios.TabIndex = 1;
             // 
             // tsbNuevo
@@ -151,19 +171,12 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // idEspecialidad
+            // id
             // 
-            this.idEspecialidad.DataPropertyName = "IDPlan";
-            this.idEspecialidad.HeaderText = "Plan";
-            this.idEspecialidad.Name = "idEspecialidad";
-            this.idEspecialidad.ReadOnly = true;
-            // 
-            // anioEspecialidad
-            // 
-            this.anioEspecialidad.DataPropertyName = "AnioEspecialidad";
-            this.anioEspecialidad.HeaderText = "Año Especialidad";
-            this.anioEspecialidad.Name = "anioEspecialidad";
-            this.anioEspecialidad.ReadOnly = true;
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
             // 
             // desc
             // 
@@ -172,32 +185,19 @@
             this.desc.Name = "desc";
             this.desc.ReadOnly = true;
             // 
-            // id
+            // anioEspecialidad
             // 
-            this.id.DataPropertyName = "ID";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
+            this.anioEspecialidad.DataPropertyName = "AnioEspecialidad";
+            this.anioEspecialidad.HeaderText = "Año Especialidad";
+            this.anioEspecialidad.Name = "anioEspecialidad";
+            this.anioEspecialidad.ReadOnly = true;
             // 
-            // dgvComisiones
+            // idEspecialidad
             // 
-            this.dgvComisiones.AllowUserToAddRows = false;
-            this.dgvComisiones.AllowUserToDeleteRows = false;
-            this.dgvComisiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvComisiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.desc,
-            this.anioEspecialidad,
-            this.idEspecialidad});
-            this.tlpComisiones.SetColumnSpan(this.dgvComisiones, 2);
-            this.dgvComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvComisiones.Location = new System.Drawing.Point(3, 3);
-            this.dgvComisiones.MultiSelect = false;
-            this.dgvComisiones.Name = "dgvComisiones";
-            this.dgvComisiones.ReadOnly = true;
-            this.dgvComisiones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvComisiones.Size = new System.Drawing.Size(794, 383);
-            this.dgvComisiones.TabIndex = 0;
+            this.idEspecialidad.DataPropertyName = "DescPlan";
+            this.idEspecialidad.HeaderText = "Plan";
+            this.idEspecialidad.Name = "idEspecialidad";
+            this.idEspecialidad.ReadOnly = true;
             // 
             // Comisiones
             // 
@@ -214,9 +214,9 @@
             this.tcComisiones.ResumeLayout(false);
             this.tcComisiones.PerformLayout();
             this.tlpComisiones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).EndInit();
             this.tsUsuarios.ResumeLayout(false);
             this.tsUsuarios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).EndInit();
             this.ResumeLayout(false);
 
         }

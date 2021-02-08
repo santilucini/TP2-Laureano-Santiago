@@ -41,11 +41,13 @@ namespace Business.Entities
         public string DescComisionCurso
         {
             get { return Curso.DescComision; }
+            
         }
         
         public string DescMateriaCurso
         {
             get { return Curso.DescMateria; }
+            set { Curso.DescMateria = value; }
         }
         public int IDCurso
         {
@@ -54,14 +56,7 @@ namespace Business.Entities
         }
 
 
-        // Si lo usamos hay que ponerlo no tengo idea de como lo hacemos
-        // Concatena la materia y la comision para mostrar por el DropDown
-        /* 
-           public string MateriaComisionCurso
-           {
-               get { return Curso.DescMateria + "-" + Curso.DescComision;}
-           }
-        */
+       
 
         // Docente
 
@@ -79,12 +74,13 @@ namespace Business.Entities
 
         // Si lo usamos hay que ponerlo
         // Concatena el nombre y la Apellido para mostrar por el DropDown
-        /*
+        
         public string NombreApellDocente
         {
             get { return Docente.Apellido + ", " + Docente.Nombre; }
+            
         }
-        */
+        
 
         #endregion
 

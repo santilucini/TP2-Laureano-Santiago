@@ -136,6 +136,7 @@ namespace UI.Web
                 {
                     idPlanDropDownList.Items.Add(pl.ID.ToString());
                 }
+                /*
                 Usuario usuario = (Usuario)Session["UsuarioActual"];
                 UsuarioLogic usuarioLogic = new UsuarioLogic();
                 try
@@ -166,7 +167,7 @@ namespace UI.Web
                     Exception ExcepcionManejada = new Exception("Error al recuperar Modulo", ex);
 
                     throw ExcepcionManejada;
-                }
+                }*/
             }
         }
 

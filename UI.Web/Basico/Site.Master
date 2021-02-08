@@ -82,10 +82,10 @@
                                             <Items>
                                                 <asp:MenuItem Text="Especialidades" Value="Especialidades" NavigateUrl="~/Admin/Especialidades.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Planes" Value="Planes" NavigateUrl="~/Admin/Planes.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Materias" Value="Materias"></asp:MenuItem>
-                                                <asp:MenuItem Text="Cursos" Value="Cursos"></asp:MenuItem>
-                                                <asp:MenuItem Text="Comisiones" Value="Comisiones"></asp:MenuItem>
-                                                <asp:MenuItem Text="Inscripciones" Value="Inscripciones"></asp:MenuItem>
+                                                <asp:MenuItem Text="Materias" Value="Materias" NavigateUrl="~/Admin/Materias.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Cursos" Value="Cursos" NavigateUrl="~/Admin/Cursos.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Comisiones" Value="Comisiones" NavigateUrl="~/Admin/Comisiones.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Inscripciones" Value="Inscripciones" NavigateUrl="~/Admin/AlumnosInscripciones.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Usuario" Value="Usuario" NavigateUrl="~/Admin/Usuarios.aspx"></asp:MenuItem>
                                             </Items>
                                             <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />

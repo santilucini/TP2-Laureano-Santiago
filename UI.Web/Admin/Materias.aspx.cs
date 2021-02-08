@@ -92,10 +92,17 @@ namespace UI.Web
 
         private void LoadEntity(Materia materia)
         {
-            materia.Descripcion = descripcionTextBox.Text;
-            materia.HSSemanales = Convert.ToInt32(hsSemanalesTextBox.Text);
-            materia.HSTotales = Convert.ToInt32(hsSemanalesTextBox.Text);
-            materia.IDPlan = Convert.ToInt32(idPlanTextBox.Text);
+            try
+            {
+                materia.Descripcion = descripcionTextBox.Text;
+                materia.HSSemanales = Convert.ToInt32(hsSemanalesTextBox.Text);
+                materia.HSTotales = Convert.ToInt32(hsSemanalesTextBox.Text);
+                materia.IDPlan = Convert.ToInt32(idPlanTextBox.Text);
+            }
+            catch
+            {
+
+            }
         }
 
         private void EnableForm(bool enable)
@@ -133,7 +140,7 @@ namespace UI.Web
             {
                 LoadGrid();
             }
-
+            /*
             Usuario usuario = (Usuario)Session["UsuarioActual"];
             UsuarioLogic usuarioLogic = new UsuarioLogic();
             try
@@ -164,7 +171,7 @@ namespace UI.Web
                 Exception ExcepcionManejada = new Exception("Error al recuperar Modulo", ex);
 
                 throw ExcepcionManejada;
-            }
+            }*/
         }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
